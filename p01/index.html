@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<!-- tpl:rar2_专题合集式 placeholders: keyword title randdesc randkws randkws1 domain -->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>14岁初中生偷尝禁果 - 青春期情感引导，家长必读的沟通指南</title>
+<meta name="description" content="当14岁初中生偷尝禁果，家长往往焦虑无助。本站提供科学、温和的青春期情感引导方案，涵盖沟通技巧、心理支持、性教育知识与家庭关系修复，帮助您理解孩子行为背后的需求，建立信任对话，平稳度过成长关键期。">
+<meta name="keywords" content="14岁初中生偷尝禁果,青春期教育,亲子沟通">
+<link rel="canonical" href="#">
+<style>
+  :root {
+    --hap-primary: #d4af37;
+    --hap-accent: #f5d76e;
+    --hap-bg: #0b0b0b;
+    --hap-bg-soft: #141414;
+    --hap-text: #e8e8e8;
+    --hap-text-dim: #a0a0a0;
+    --hap-border: rgba(212, 175, 55, 0.35);
+    --hap-glow: rgba(212, 175, 55, 0.25);
+    --hap-card: #1a1a1a;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--hap-bg);
+    color: var(--hap-text);
+    line-height: 1.7;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  /* ============ 背景动画层 ============ */
+  .bg-layer {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  /* 1. 渐变流动 */
+  .bg-layer__gradient {
+    position: absolute;
+    inset: -20%;
+    background: linear-gradient(120deg, #0b0b0b 0%, #1a1408 25%, #0b0b0b 50%, #15110a 75%, #0b0b0b 100%);
+    background-size: 400% 400%;
+    animation: gradientFlow 18s ease infinite;
+    opacity: 0.9;
+  }
+
+  @keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* 2. 光晕脉动 */
+  .bg-layer__halo {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.22) 0%, rgba(212, 175, 55, 0.06) 45%, transparent 70%);
+    animation: haloPulse 9s ease-in-out infinite;
+  }
+  .bg-layer__halo--1 {
+    width: 520px;
+    height: 520px;
+    top: 5%;
+    left: -8%;
+    animation-delay: 0s;
+  }
+  .bg-layer__halo--2 {
+    width: 680px;
+    height: 680px;
+    top: 45%;
+    right: -14%;
+    animation-delay: 3s;
+  }
+  .bg-layer__halo--3 {
+    width: 440px;
+    height: 440px;
+    bottom: -6%;
+    left: 28%;
+    animation-delay: 6s;
+  }
+
+  @keyframes haloPulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.45;
+    }
+    50% {
+      transform: scale(1.35);
+      opacity: 0.85;
+    }
+  }
+
+  /* 3. 水波涟漪 */
+  .bg-layer__ripple {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(212, 175, 55, 0.28);
+    animation: rippleSpread 7s ease-out infinite;
+  }
+  .bg-layer__ripple--1 {
+    width: 260px; height: 260px;
+    top: 18%; left: 12%;
+    animation-delay: 0s;
+  }
+  .bg-layer__ripple--2 {
+    width: 220px; height: 220px;
+    top: 62%; left: 68%;
+    animation-delay: 2.2s;
+  }
+  .bg-layer__ripple--3 {
+    width: 300px; height: 300px;
+    top: 38%; left: 45%;
+    animation-delay: 4.4s;
+  }
+  .bg-layer__ripple--4 {
+    width: 200px; height: 200px;
+    bottom: 12%; left: 20%;
+    animation-delay: 1.1s;
+  }
+
+  @keyframes rippleSpread {
+    0% {
+      transform: scale(0.35);
+      opacity: 0.85;
+    }
+    70% {
+      opacity: 0.25;
+    }
+    100% {
+      transform: scale(2.4);
+      opacity: 0;
+    }
+  }
+
+  .page-wrap {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ============ 极简导航 ============ */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 6vw;
+    background: rgba(11, 11, 11, 0.82);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--hap-border);
+  }
+
+  .navbar__logo {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--hap-primary);
+    text-decoration: none;
+    text-shadow: 0 0 18px var(--hap-glow);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 62vw;
+  }
+
+  .navbar__cta {
+    flex-shrink: 0;
+    display: inline-block;
+    padding: 8px 22px;
+    border: 1px solid var(--hap-primary);
+    border-radius: 40px;
+    color: var(--hap-bg);
+    background: linear-gradient(135deg, var(--hap-primary), var(--hap-accent));
+    font-size: 0.86rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 14px var(--hap-glow);
+  }
+  .navbar__cta:hover {
+    box-shadow: 0 0 26px var(--hap-glow);
+    transform: translateY(-1px);
+  }
+
+  /* ============ 偏移布局容器 ============ */
+  .offset-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 6vw;
+  }
+
+  .offset-left {
+    padding-left: 4vw;
+  }
+
+  /* ============ Hero 极简 ============ */
+  .hero {
+    position: relative;
+    padding: 90px 0 70px;
+    text-align: left;
+  }
+
+  .hero__deco {
+    position: absolute;
+    top: 20px;
+    right: 6vw;
+    font-size: clamp(4rem, 15vw, 9rem);
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(212, 175, 55, 0.16);
+    letter-spacing: 0.05em;
+    user-select: none;
+    pointer-events: none;
+    line-height: 1;
+  }
+
+  .hero__title {
+    font-size: clamp(2rem, 6vw, 3.6rem);
+    font-weight: 800;
+    line-height: 1.25;
+    color: #fff;
+    margin-bottom: 18px;
+    max-width: 780px;
+  }
+
+  .hero__title em {
+    font-style: normal;
+    color: var(--hap-primary);
+    text-shadow: 0 0 26px var(--hap-glow);
+  }
+
+  .hero__sub {
+    font-size: 1.02rem;
+    color: var(--hap-text-dim);
+    max-width: 620px;
+    margin-bottom: 34px;
+  }
+
+  .hero__btn {
+    display: inline-block;
+    padding: 13px 40px;
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: var(--hap-bg);
+    background: linear-gradient(135deg, var(--hap-primary), var(--hap-accent));
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    box-shadow: 0 0 24px var(--hap-glow);
+    transition: all 0.3s ease;
+  }
+  .hero__btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 40px var(--hap-glow);
+  }
+
+  /* ============ 通用 section ============ */
+  .section {
+    padding: 56px 0;
+  }
+
+  .section__head {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+
+  .section__title {
+    font-size: 1.55rem;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    padding-left: 16px;
+  }
+
+  .section__title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 70%;
+    background: linear-gradient(var(--hap-primary), transparent);
+    border-radius: 2px;
+  }
+
+  .section__desc {
+    font-size: 0.86rem;
+    color: var(--hap-text-dim);
+  }
+
+  /* ============ 内容列表 ============ */
+  .clist {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-left: 3vw;
+  }
+
+  .clist__item {
+    display: grid;
+    grid-template-columns: 64px 168px 1fr;
+    gap: 22px;
+    align-items: center;
+    background: var(--hap-card);
+    border: 1px solid rgba(212, 175, 55, 0.16);
+    border-radius: 10px;
+    padding: 16px;
+    transition: all 0.32s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .clist__item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(180deg, var(--hap-primary), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .clist__item:hover {
+    border-color: var(--hap-border);
+    transform: translateX(6px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  }
+  .clist__item:hover::after {
+    opacity: 1;
+  }
+
+  .clist__num {
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: rgba(212, 175, 55, 0.55);
+    text-align: center;
+    font-family: "Georgia", serif;
+  }
+
+  .clist__thumb {
+    width: 168px;
+    height: 108px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    flex-shrink: 0;
+  }
+  .clist__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.45s ease;
+  }
+  .clist__item:hover .clist__thumb img {
+    transform: scale(1.08);
+  }
+
+  .clist__body h3 {
+    font-size: 1.05rem;
+    color: #fff;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  .clist__body p {
+    font-size: 0.85rem;
+    color: var(--hap-text-dim);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .clist__tag {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 0.72rem;
+    padding: 2px 10px;
+    border-radius: 20px;
+    color: var(--hap-primary);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    background: rgba(212, 175, 55, 0.07);
+  }
+
+  /* ============ 相关专题 ============ */
+  .related {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 22px;
+    margin-left: 2vw;
+  }
+
+  .related__card {
+    background: var(--hap-card);
+    border: 1px solid rgba(212, 175, 55, 0.16);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.32s ease;
+  }
+  .related__card:hover {
+    border-color: var(--hap-border);
+    transform: translateY(-5px);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.65);
+  }
+
+  .related__img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .related__body {
+    padding: 16px 18px 18px;
+  }
+
+  .related__body h3 {
+    font-size: 0.98rem;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+
+  .related__body p {
+    font-size: 0.8rem;
+    color: var(--hap-text-dim);
+  }
+
+  /* ============ 编辑推荐 ============ */
+  .editor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 22px;
+    margin-left: 5vw;
+  }
+
+  .editor__card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all 0.35s ease;
+  }
+  .editor__card:hover {
+    transform: translateY(-6px) scale(1.015);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+  }
+
+  .editor__img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .editor__mask {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(11, 11, 11, 0.15) 0%, rgba(11, 11, 11, 0.88) 78%);
+    z-index: 1;
+  }
+
+  .editor__content {
+    position: relative;
+    z-index: 2;
+    padding: 18px;
+  }
+
+  .editor__badge {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--hap-bg);
+    background: var(--hap-primary);
+    padding: 2px 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+
+  .editor__content h3 {
+    font-size: 1.02rem;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+
+  .editor__content p {
+    font-size: 0.79rem;
+    color: #c9c9c9;
+  }
+
+  /* ============ 热门专题 Top8 ============ */
+  .hot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 26px;
+    margin-left: 2vw;
+  }
+
+  .hot__row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 13px 16px;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.12);
+    transition: all 0.28s ease;
+    border-radius: 6px;
+  }
+  .hot__row:hover {
+    background: rgba(212, 175, 55, 0.06);
+    padding-left: 24px;
+  }
+
+  .hot__rank {
+    font-size: 1.05rem;
+    font-weight: 900;
+    color: var(--hap-primary);
+    width: 30px;
+    flex-shrink: 0;
+    font-family: "Georgia", serif;
+  }
+
+  .hot__row:nth-child(1) .hot__rank,
+  .hot__row:nth-child(2) .hot__rank {
+    color: #ff5c5c;
+  }
+
+  .hot__text {
+    flex: 1;
+    font-size: 0.9rem;
+    color: var(--hap-text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hot__heat {
+    font-size: 0.72rem;
+    color: var(--hap-text-dim);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    padding: 1px 9px;
+    border-radius: 20px;
+    flex-shrink: 0;
+  }
+
+  /* ============ 同类专题 ============ */
+  .similar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 18px;
+    margin-left: 4vw;
+  }
+
+  .similar__card {
+    background: var(--hap-card);
+    border: 1px solid rgba(212, 175, 55, 0.16);
+    border-radius: 9px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .similar__card:hover {
+    border-color: var(--hap-border);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
+  }
+
+  .similar__img {
+    width: 100%;
+    height: 112px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .similar__body {
+    padding: 13px 14px 15px;
+  }
+
+  .similar__body h3 {
+    font-size: 0.88rem;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+
+  .similar__body span {
+    font-size: 0.72rem;
+    color: var(--hap-primary);
+  }
+
+  /* ============ CTA 查看全部 ============ */
+  .cta {
+    text-align: center;
+    padding: 70px 6vw;
+    border-top: 1px solid rgba(212, 175, 55, 0.18);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+    background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.08) 0%, transparent 65%);
+  }
+
+  .cta__title {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    color: #fff;
+    margin-bottom: 14px;
+    font-weight: 800;
+  }
+
+  .cta__sub {
+    font-size: 0.92rem;
+    color: var(--hap-text-dim);
+    margin-bottom: 30px;
+  }
+
+  .cta__btn {
+    display: inline-block;
+    padding: 15px 52px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--hap-bg);
+    background: linear-gradient(135deg, var(--hap-primary), var(--hap-accent));
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    box-shadow: 0 0 30px var(--hap-glow);
+    transition: all 0.3s ease;
+  }
+  .cta__btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 48px var(--hap-glow);
+  }
+
+  /* ============ 页脚 ============ */
+  .footer {
+    background: #080808;
+    border-top: 1px solid var(--hap-border);
+    padding: 54px 6vw 28px;
+    margin-top: 30px;
+  }
+
+  .footer__cols {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 36px;
+  }
+
+  .footer__brand-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--hap-primary);
+    margin-bottom: 12px;
+    text-shadow: 0 0 16px var(--hap-glow);
+    word-break: break-all;
+  }
+
+  .footer__brand-desc {
+    font-size: 0.82rem;
+    color: var(--hap-text-dim);
+    line-height: 1.8;
+  }
+
+  .footer__col h4 {
+    font-size: 0.9rem;
+    color: #fff;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+
+  .footer__col ul {
+    list-style: none;
+  }
+
+  .footer__col li {
+    margin-bottom: 10px;
+  }
+
+  .footer__col a {
+    font-size: 0.82rem;
+    color: var(--hap-text-dim);
+    text-decoration: none;
+    transition: color 0.25s ease;
+  }
+  .footer__col a:hover {
+    color: var(--hap-primary);
+  }
+
+  .footer__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .footer__tags span {
+    font-size: 0.72rem;
+    padding: 3px 10px;
+    border: 1px solid rgba(212, 175, 55, 0.28);
+    border-radius: 20px;
+    color: var(--hap-text-dim);
+    transition: all 0.25s ease;
+  }
+  .footer__tags span:hover {
+    color: var(--hap-primary);
+    border-color: var(--hap-primary);
+  }
+
+  .footer__bottom {
+    max-width: 1200px;
+    margin: 42px auto 0;
+    padding-top: 22px;
+    border-top: 1px solid rgba(212, 175, 55, 0.14);
+    text-align: center;
+    font-size: 0.76rem;
+    color: #6d6d6d;
+    line-height: 2;
+  }
+
+  .footer__bottom a {
+    color: #8a8a8a;
+    text-decoration: none;
+  }
+
+  /* ============ 响应式 ============ */
+  @media (max-width: 900px) {
+    .clist__item {
+      grid-template-columns: 46px 120px 1fr;
+      gap: 14px;
+    }
+    .clist__thumb {
+      width: 120px;
+      height: 84px;
+    }
+    .clist__num {
+      font-size: 1.3rem;
+    }
+    .hot {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .navbar {
+      padding: 13px 5vw;
+    }
+    .navbar__logo {
+      font-size: 0.86rem;
+    }
+    .navbar__cta {
+      padding: 6px 15px;
+      font-size: 0.76rem;
+    }
+    .hero {
+      padding: 58px 0 48px;
+    }
+    .hero__deco {
+      font-size: 4.5rem;
+      top: 6px;
+    }
+    .clist {
+      margin-left: 0;
+    }
+    .clist__item {
+      grid-template-columns: 1fr;
+      gap: 12px;
+      padding: 14px;
+    }
+    .clist__num {
+      position: absolute;
+      top: 10px;
+      left: 12px;
+      z-index: 3;
+      background: rgba(11, 11, 11, 0.75);
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 50%;
+      font-size: 0.95rem;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+    }
+    .clist__thumb {
+      width: 100%;
+      height: 160px;
+    }
+    .related,
+    .editor,
+    .similar {
+      margin-left: 0;
+    }
+    .footer__cols {
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+    }
+    .footer__col--brand {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .footer__cols {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+<!-- page p01 theme pink ai=1 -->
+</head>
+<body>
+
+<!-- 背景动画层 -->
+<div class="bg-layer" aria-hidden="true">
+  <div class="bg-layer__gradient"></div>
+  <div class="bg-layer__halo bg-layer__halo--1"></div>
+  <div class="bg-layer__halo bg-layer__halo--2"></div>
+  <div class="bg-layer__halo bg-layer__halo--3"></div>
+  <div class="bg-layer__ripple bg-layer__ripple--1"></div>
+  <div class="bg-layer__ripple bg-layer__ripple--2"></div>
+  <div class="bg-layer__ripple bg-layer__ripple--3"></div>
+  <div class="bg-layer__ripple bg-layer__ripple--4"></div>
+</div>
+
+<div class="page-wrap">
+
+  <!-- 极简导航 -->
+  <nav class="navbar">
+    <a href="#" class="navbar__logo">14岁初中生偷尝禁果</a>
+    <a href="#cta" class="navbar__cta">进入专题</a>
+  </nav>
+
+  <!-- 1. Hero -->
+  <header class="hero">
+    <div class="offset-wrap">
+      <div class="hero__deco">糖宝</div>
+      <h1 class="hero__title">14岁初中生偷尝禁果<em>金主中介平台</em></h1>
+      <p class="hero__sub">甜心有约甜蜜定制高端找糖爹糖宝金主中介平台，在这里，您可以找到属于您的甜蜜定制，全球数万人已经成功牵手，是领先的糖爹找糖宝约会平台，免费注册，拒绝低俗色情，打造健康交友</p>
+      <a href="#list" class="hero__btn">查看全部专题</a>
+    </div>
+  </header>
+
+  <!-- 2. 内容列表 -->
+  <section class="section" id="list">
+    <div class="offset-wrap">
+      <div class="section__head">
+        <h2 class="section__title">精选专题列表</h2>
+        <span class="section__desc">10-15 条 · 按情绪场景分类</span>
+      </div>
+
+      <div class="clist">
+
+        <article class="clist__item">
+          <div class="clist__num">01</div>
+          <div class="clist__thumb"><img src="https://picsum.photos/seed/14%E5%B2%81%E5%88%9D%E4%B8%AD%E7%94%9F%E5%81%B7%E5%B0%9D%E7%A6%81%E6%9E%9C-pink-73bbf82c/800/450" alt="设计工作室场景专题封面"></div>
+          <div class="clist__body">
+            <h3>初见心动 · 都市夜归人的温柔匹配</h3>
+            <p>深夜加班后想找人说说话？这个专题收录了最真实的都市夜归场景，帮你在霓虹与路灯之间，找到那份属于自己的安心陪伴。</p>
+            <span class="clist__tag">情绪：孤独治愈</span>
+          </div>
+        </article>
+
+        <article class="clist__item">
+          <div class="clist__num">02</div>
+          <div class="clist__thumb"><img src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="3D电影眼镜场景专题封面"></div>
+          <div class="clist__body">
+            <h3>光影约会 · 从一场电影开始的缘分</h3>
+            <p>把约会地点定在电影院红色座椅中间，黑暗中悄悄靠近。专题精选适合初次见面的观影场景与搭配话题，让沉默也变得有趣。</p>
+            <span class="clist__tag">情绪：浪漫期待</span>
+          </div>
+        </article>
+
+        <article class="clist__item">
+          <div class="clist__num">03</div>
+          <div class="clist__thumb"><img src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="黄昏城市场景专题封面"></div>
+          <div class="clist__body">
+            <h3>黄昏散步 · 城市天台上的慢节奏交流</h3>
+            <p>不想太快进入正题？一起在天台看一场黄昏，慢慢聊。专题整理了适合慢热型用户的黄昏场景与轻松开场白，让关系自然升温。</p>
+            <span class="clist__tag">情绪：从容放松</span>
+          </div>
+        </article>
+
+        <article class="clist__item">
+          <div class="clist__num">04</div>
+          <div class="clist__thumb"><img src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="电影摄像机场景专题封面"></div>
+          <div class="clist__body">
+            <h3>幕后故事 · 糖宝眼中的真实记录</h3>
+            <p>镜头前后是两种人生。专题以纪实视角呈现糖宝们的日常片段与内心独白，帮助你理解屏幕另一端真实的她，而不只是标签。</p>
+            <span class="clist__tag">情绪：理解共情</span>
+          </div>
+        </article>
+
+        <article class="clist__item">
+          <div class="clist__num">05</div>
+          <div class="clist__thumb"><img src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="电影摄影棚场景专题封面"></div>
+          <div class="clist__body">
+            <h3>高光时刻 · 那些被精心准备的惊喜</h3>
+            <p>一次用心的安排，胜过千言万语。专题收录了摄影棚级别的场景策划灵感，从灯光到音乐，帮你在特别的日子里留下难忘印象。</p>
+            <span class="clist__tag">情绪：仪式感动</span>
+          </div>
+        </article>
+
+        <article class="clist__item">
+          <div class="clist__num">06</div>
+          <div class="clist__thumb"><img src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="书店书架场景专题封面"></div>
+          <div class="clist__body">
+            <h3>书店偶遇 · 从一本书聊到凌晨</h3>
+            <p>书架间不经意的对视，是很多人心中最理想的相遇方式。专题按书籍类型匹配话题，让你从文学聊到生活，自然不冷场。</p>
+            <span class="clist__tag">情绪：文艺悸动</span>
+          </div>
+        </article>
+
+        <article class="clist__item">
+          <div class="clist__num">07</div>
+          <div class="clist__thumb"><img src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="夜晚霓虹街景专题封面"></div>
+          <div class="clist__body">
+            <h3>霓虹夜游 · 城市夜生活场景指南</h3>
+            <p>霓虹灯下的城市有另一种魅力。专题整理了适合夜间交流的场景与节奏建议，让不擅长白天社交的人也能找到舒适的相处方式。</p>
+            <span class="clist__tag">情绪：跃动兴奋</span>
+          </div>
+        </article>
+
+        <article class="clist__item">
+          <div class="clist__num">08</div>
+          <div class="clist__thumb"><img src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="藏书阁场景专题封面"></div>
+          <div class="clist__body">
+            <h3>慢时光 · 属于内向者的安静匹配</h3>
+            <p>不需要热闹的场合，也不需要刻意表现。专题为内向型用户准备安静的相处场景，藏书阁般的氛围里，两个人也可以什么都不说。</p>
+            <span class="clist__tag">情绪：宁静安心</span>
+          </div>
+        </article>
+
+        <article class="clist__item">
+          <div class="clist__num">09</div>
+          <div class="clist__thumb"><img src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="城市路灯场景专题封面"></div>
+          <div class="clist__body">
+            <h3>路灯下的坦白 · 那些没说出口的话</h3>
+            <p>有些话只有在路灯下才说得出口。专题收集了用户们最真实的坦白瞬间，帮助你在安全的环境里表达真正在意的事情。</p>
+            <span class="clist__tag">情绪：勇敢表达</span>
+          </div>
+        </article>
+
+        <article class="clist__item">
+          <div class="clist__num">10</div>
+          <div class="clist__thumb"><img src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="老式电影放映机场景专题封面"></div>
+          <div class="clist__body">
+            <h3>怀旧专场 · 老电影与旧时光里的陪伴</h3>
+            <p>喜欢老电影的人，往往也珍惜细水长流的关系。专题用怀旧视角串联场景，让慢节奏的交流也能充满温度与回味。</p>
+            <span class="clist__tag">情绪：怀念温柔</span>
+          </div>
+        </article>
+
+        <article class="clist__item">
+          <div class="clist__num">11</div>
+          <div class="clist__thumb"><img src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="雨夜城市场景专题封面"></div>
+          <div class="clist__body">
+            <h3>雨夜心事 · 当情绪需要被接住</h3>
+            <p>下雨的夜晚，情绪总是格外丰富。专题为你匹配同样喜欢雨夜、愿意倾听的人，让那些说不清的心事有人可以接住。</p>
+            <span class="clist__tag">情绪：脆弱被懂</span>
+          </div>
+        </article>
+
+        <article class="clist__item">
+          <div class="clist__num">12</div>
+          <div class="clist__thumb"><img src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="翻开的书本场景专题封面"></div>
+          <div class="clist__body">
+            <h3>翻开新页 · 从零开始的关系练习</h3>
+            <p>每一次新的尝试都值得被认真对待。专题为首次使用平台的用户准备了从开场到深入交流的完整节奏建议，让第一步不再犹豫。</p>
+            <span class="clist__tag">情绪：新鲜期待</span>
+          </div>
+        </article>
+
+        <article class="clist__item">
+          <div class="clist__num">13</div>
+          <div class="clist__thumb"><img src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="艺术画作场景专题封面"></div>
+          <div class="clist__body">
+            <h3>审美同频 · 从一幅画看懂彼此</h3>
+            <p>审美一致的人，往往更容易聊到一起。专题以艺术画作为切入点，帮你快速找到对生活有相似感受的人，从喜欢聊到共鸣。</p>
+            <span class="clist__tag">情绪：知音相遇</span>
+          </div>
+        </article>
+
+        <article class="clist__item">
+          <div class="clist__num">14</div>
+          <div class="clist__thumb"><img src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="城市夜景河畔场景专题封面"></div>
+          <div class="clist__body">
+            <h3>河畔夜谈 · 把节奏交还给彼此</h3>
+            <p>江水静静流过，对话也自然放慢。专题推荐适合长谈的夜间户外场景，让交流不再是任务，而是两个人都享受的时光。</p>
+            <span class="clist__tag">情绪：舒展自在</span>
+          </div>
+        </article>
+
+        <article class="clist__item">
+          <div class="clist__num">15</div>
+          <div class="clist__thumb"><img src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="夜晚城市灯光场景专题封面"></div>
+          <div class="clist__body">
+            <h3>万家灯火 · 找到愿意为你留灯的人</h3>
+            <p>城市很大，但总有一盏灯是为你亮的。专题以家的温度为核心，帮你匹配愿意认真经营长期关系的人，让陪伴不再短暂。</p>
+            <span class="clist__tag">情绪：归属安定</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+<!-- track:pv -->
+
+  <!-- 3. 相关专题 -->
+  <section class="section">
+    <div class="offset-wrap">
+      <div class="section__head">
+        <h2 class="section__title">相关专题</h2>
+        <span class="section__desc">你可能也感兴趣</span>
+      </div>
+      <div class="related">
+
+        <article class="related__card">
+          <img class="related__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="现代艺术相关专题封面">
+          <div class="related__body">
+            <h3>审美同频 · 艺术交流专场</h3>
+            <p>用一幅画开启话题，找到真正懂你的人。</p>
+          </div>
+        </article>
+
+        <article class="related__card">
+          <img class="related__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="电影院红色座椅相关专题封面">
+          <div class="related__body">
+            <h3>银幕之约 · 观影场景合辑</h3>
+            <p>电影院里的第一次靠近，值得被认真记录。</p>
+          </div>
+        </article>
+
+        <article class="related__card">
+          <img class="related__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="城市夜晚高楼相关专题封面">
+          <div class="related__body">
+            <h3>高楼夜话 · 城市天际线下的陪伴</h3>
+            <p>站在高处聊天，视野宽了心也就开了。</p>
+          </div>
+        </article>
+
+        <article class="related__card">
+          <img class="related__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="黄昏城市相关专题封面">
+          <div class="related__body">
+            <h3>慢热专场 · 从黄昏聊到天黑</h3>
+            <p>不赶时间的关系，往往走得更远一些。</p>
+          </div>
+        </article>
+
+        <article class="related__card">
+          <img class="related__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="夜晚霓虹街景相关专题封面">
+          <div class="related__body">
+            <h3>夜行动物 · 霓虹下的同频交流</h3>
+            <p>适合夜晚活跃的你，找到同样不困的人。</p>
+          </div>
+        </article>
+
+        <article class="related__card">
+          <img class="related__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="翻开的书本相关专题封面">
+          <div class="related__body">
+            <h3>初识指南 · 新用户精选入口</h3>
+            <p>第一次来？从这里开始了解糖爹糖宝官网。</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 编辑推荐 -->
+  <section class="section">
+    <div class="offset-wrap">
+      <div class="section__head">
+        <h2 class="section__title">家长必读</h2>
+        <span class="section__desc">本周最值得一看</span>
+      </div>
+      <div class="editor">
+
+        <article class="editor__card">
+          <img class="editor__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="电影摄影棚编辑推荐封面">
+          <div class="editor__mask"></div>
+          <div class="editor__content">
+            <span class="editor__badge">本周首推</span>
+            <h3>高光时刻 · 仪式感场景全记录</h3>
+            <p>精心准备的惊喜，让关系在细节里升温。</p>
+          </div>
+        </article>
+
+        <article class="editor__card">
+          <img class="editor__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="雨夜城市编辑推荐封面">
+          <div class="editor__mask"></div>
+          <div class="editor__content">
+            <span class="editor__badge">情绪专题</span>
+            <h3>雨夜心事 · 愿意倾听的人在等你</h3>
+            <p>当情绪需要被接住，这里有人愿意听。</p>
+          </div>
+        </article>
+
+        <article class="editor__card">
+          <img class="editor__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="书店书架编辑推荐封面">
+          <div class="editor__mask"></div>
+          <div class="editor__content">
+            <span class="editor__badge">高口碑</span>
+            <h3>书店偶遇 · 从一本书聊到凌晨</h3>
+            <p>文学话题匹配，让交流自然不尴尬。</p>
+          </div>
+        </article>
+
+        <article class="editor__card">
+          <img class="editor__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="城市夜景河畔编辑推荐封面">
+          <div class="editor__mask"></div>
+          <div class="editor__content">
+            <span class="editor__badge">编辑力荐</span>
+            <h3>河畔夜谈 · 把节奏交还给彼此</h3>
+            <p>适合喜欢长谈的人，慢下来才能聊得深。</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 热门专题 Top 8 -->
+  <section class="section">
+    <div class="offset-wrap">
+      <div class="section__head">
+        <h2 class="section__title">热门专题 Top 8</h2>
+        <span class="section__desc">根据用户浏览热度排序</span>
+      </div>
+      <div class="hot">
+
+        <div class="hot__row">
+          <span class="hot__rank">01</span>
+          <span class="hot__text">初见心动 · 都市夜归人的温柔匹配</span>
+          <span class="hot__heat">热度 9821</span>
+        </div>
+
+        <div class="hot__row">
+          <span class="hot__rank">02</span>
+          <span class="hot__text">光影约会 · 从一场电影开始的缘分</span>
+          <span class="hot__heat">热度 9146</span>
+        </div>
+
+        <div class="hot__row">
+          <span class="hot__rank">03</span>
+          <span class="hot__text">万家灯火 · 找到愿意为你留灯的人</span>
+          <span class="hot__heat">热度 8730</span>
+        </div>
+
+        <div class="hot__row">
+          <span class="hot__rank">04</span>
+          <span class="hot__text">霓虹夜游 · 城市夜生活场景指南</span>
+          <span class="hot__heat">热度 8205</span>
+        </div>
+
+        <div class="hot__row">
+          <span class="hot__rank">05</span>
+          <span class="hot__text">慢时光 · 属于内向者的安静匹配</span>
+          <span class="hot__heat">热度 7689</span>
+        </div>
+
+        <div class="hot__row">
+          <span class="hot__rank">06</span>
+          <span class="hot__text">雨夜心事 · 当情绪需要被接住</span>
+          <span class="hot__heat">热度 7124</span>
+        </div>
+
+        <div class="hot__row">
+          <span class="hot__rank">07</span>
+          <span class="hot__text">书店偶遇 · 从一本书聊到凌晨</span>
+          <span class="hot__heat">热度 6658</span>
+        </div>
+
+        <div class="hot__row">
+          <span class="hot__rank">08</span>
+          <span class="hot__text">路灯下的坦白 · 那些没说出口的话</span>
+          <span class="hot__heat">热度 6033</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 同类专题 -->
+  <section class="section">
+    <div class="offset-wrap">
+      <div class="section__head">
+        <h2 class="section__title">同类专题</h2>
+        <span class="section__desc">继续浏览更多场景</span>
+      </div>
+      <div class="similar">
+
+        <article class="similar__card">
+          <img class="similar__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="设计工作室同类专题封面">
+          <div class="similar__body">
+            <h3>创意空间 · 灵感碰撞专场</h3>
+            <span>场景：工作室</span>
+          </div>
+        </article>
+
+        <article class="similar__card">
+          <img class="similar__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="3D电影眼镜同类专题封面">
+          <div class="similar__body">
+            <h3>沉浸体验 · 观影匹配合辑</h3>
+            <span>场景：电影院</span>
+          </div>
+        </article>
+
+        <article class="similar__card">
+          <img class="similar__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="城市路灯同类专题封面">
+          <div class="similar__body">
+            <h3>夜灯同行 · 城市街角漫步</h3>
+            <span>场景：街道</span>
+          </div>
+        </article>
+
+        <article class="similar__card">
+          <img class="similar__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="藏书阁同类专题封面">
+          <div class="similar__body">
+            <h3>静读时光 · 书房里的对谈</h3>
+            <span>场景：藏书阁</span>
+          </div>
+        </article>
+
+        <article class="similar__card">
+          <img class="similar__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="老式电影放映机同类专题封面">
+          <div class="similar__body">
+            <h3>怀旧放映 · 经典重温专场</h3>
+            <span>场景：放映厅</span>
+          </div>
+        </article>
+
+        <article class="similar__card">
+          <img class="similar__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="城市夜晚高楼同类专题封面">
+          <div class="similar__body">
+            <h3>城市之巅 · 高空对话场景</h3>
+            <span>场景：高楼</span>
+          </div>
+        </article>
+
+        <article class="similar__card">
+          <img class="similar__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="夜晚城市灯光同类专题封面">
+          <div class="similar__body">
+            <h3>灯火可亲 · 温暖陪伴专题</h3>
+            <span>场景：夜色</span>
+          </div>
+        </article>
+
+        <article class="similar__card">
+          <img class="similar__img" src="https://picsum.photos/seed/14岁初中生偷尝禁果/800/450" alt="现代艺术同类专题封面">
+          <div class="similar__body">
+            <h3>艺术共鸣 · 审美交流专场</h3>
+            <span>场景：艺术空间</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. 查看全部 CTA -->
+  <section class="cta" id="cta">
+    <h2 class="cta__title">还有更多专题等你发现</h2>
+    <p class="cta__sub">14岁初中生偷尝禁果 · 每日更新 · 精选推荐 · 情绪匹配</p>
+    <a href="#" class="cta__btn">查看全部专题</a>
+  </section>
+<!-- track:pv -->
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="footer__cols">
+
+      <div class="footer__col footer__col--brand">
+        <div class="footer__brand-name">14岁初中生偷尝禁果</div>
+        <p class="footer__brand-desc">聚合精选推荐与情绪匹配专题，每日更新优质场景内容，为找糖爹、看糖宝推荐提供一站式浏览体验。</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>快速导航</h4>
+        <ul>
+          <li><a href="#list">精选专题列表</a></li>
+          <li><a href="#cta">查看全部</a></li>
+          <li><a href="#">编辑推荐</a></li>
+          <li><a href="#">热门专题 Top 8</a></li>
+          <li><a href="#">相关专题</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>热门标签</h4>
+        <div class="footer__tags">
+          <span>糖爹</span>
+          <span>找糖爹</span>
+          <span>糖爹网</span>
+          <span>糖宝官网</span>
+          <span>精选推荐</span>
+          <span>每日更新</span>
+          <span>情绪匹配</span>
+          <span>场景专题</span>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>联系入口</h4>
+        <ul>
+          <li><a href="#">意见反馈</a></li>
+          <li><a href="#">专题投稿</a></li>
+          <li><a href="#">合作咨询</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 martinezjerry989.github.io </p>
+      <p>津ICP备202617600469号-19</p>
+      <p>免责声明：本站所有专题内容均由用户整理或平台编辑，仅供浏览参考，请遵守当地法律法规。</p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  // 平滑滚动（针对旧版浏览器兜底）
+  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+    anchor.addEventListener('click', function (e) {
+      var targetId = this.getAttribute('href');
+      if (targetId && targetId.length > 1) {
+        var target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
+
+  // 内容列表项进入视口时轻微渐显
+  (function () {
+    var items = document.querySelectorAll('.clist__item');
+    if (!('IntersectionObserver' in window)) {
+      items.forEach(function (el) { el.style.opacity = '1'; });
+      return;
+    }
+    items.forEach(function (el) {
+      el.style.opacity = '0';
+      el.style.transition = 'opacity 0.6s ease, transform 0.32s ease, border-color 0.32s ease, box-shadow 0.32s ease';
+    });
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    items.forEach(function (el) { observer.observe(el); });
+  })();
+</script>
+
+
+    <script>
+    (function(){
+      function fixImg(img){
+        if (img.dataset.fallbackApplied) return;
+        img.dataset.fallbackApplied = '1';
+        img.src = 'https://picsum.photos/seed/14岁初中生偷尝禁果/800/450' + Math.floor(Math.random()*100000) + '/800/600';
+      }
+      document.querySelectorAll('img').forEach(function(img){
+        img.addEventListener('error', function(){ fixImg(this); });
+        if (img.complete && img.naturalWidth === 0) { fixImg(img); }
+      });
+    })();
+    </script>
+    <!--pg-access-gate-->
+<script>
+(function(){
+  try {
+    var CFG = {"enabled":true,"spiderMode":"ua_ip","spiderUa":["googlebot","bingbot","baiduspider","sogou","360spider","yisouspider","yandex","duckduckbot","bytespider","petalbot"],"shieldPc":"<!DOCTYPE html>\n<html lang=\"zh-CN\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>访问受限</title>\n<style>\n*{box-sizing:border-box}html,body{margin:0;height:100%}\nbody{display:flex;align-items:center;justify-content:center;background:#eef1f6;font-family:Georgia,\"Songti SC\",serif;color:#243044}\n.panel{width:90%;max-width:640px;min-height:240px;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 18px 50px rgba(20,36,64,.12);display:flex}\n.aside{width:180px;background:linear-gradient(180deg,#1f3b63,#2f5f98);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center}\n.main{flex:1;padding:40px 32px}h1{margin:0 0 10px;font-size:26px}p{color:#5b6b80;line-height:1.8}\n</style></head><body>\n<div class=\"panel\"><div class=\"aside\"><div style=\"font-size:40px\">🖥️</div><h2>PC</h2></div>\n<div class=\"main\"><h1>访问受限</h1><p>当前请求未通过访问验证。</p></div></div>\n</body></html>","shieldMobile":"<!DOCTYPE html>\n<html lang=\"zh-CN\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n<title>访问受限</title>\n<style>\n*{box-sizing:border-box}html,body{margin:0;height:100%}\nbody{min-height:100dvh;background:#10141c;color:#f4f6fb;font-family:-apple-system,\"PingFang SC\",sans-serif;display:flex;flex-direction:column}\n.sheet{margin-top:auto;background:#1b2230;border-radius:28px 28px 0 0;padding:28px 22px 36px}\nh1{margin:0 0 8px;font-size:24px}p{color:#b7c0ce;line-height:1.7}\n</style></head><body>\n<div class=\"sheet\"><div style=\"font-size:28px;margin-bottom:10px\">📱</div>\n<h1>访问受限</h1><p>当前手机请求未通过访问验证。</p></div>\n</body></html>","version":6};
+    function isMobile(ua){
+      ua = String(ua||"").toLowerCase();
+      return /mobile|android|iphone|ipad|ipod|webos|blackberry|iemobile|opera mini|windows phone|micromessenger|miniprogram|harmonyos|okhttp|dalvik/.test(ua);
+    }
+    function uaSpider(ua){
+      ua = String(ua||"").toLowerCase();
+      var list = CFG.spiderUa || [];
+      for (var i=0;i<list.length;i++){ if(list[i] && ua.indexOf(list[i])>=0) return true; }
+      return false;
+    }
+    var ua = navigator.userAgent || "";
+    var mobile = isMobile(ua);
+    var gateOn = CFG.enabled !== false;
+    // 未开闸门：所有人可见
+    if (!gateOn) return;
+    // 蜘蛛放行（静态站只能认 UA；IP 需 Cloudflare Worker）
+    if (uaSpider(ua)) return;
+    // 普通人：整页换成屏蔽页
+    var html = mobile ? (CFG.shieldMobile||"") : (CFG.shieldPc||"");
+    if (!html) html = "<!DOCTYPE html><html><body><h1>访问受限</h1></body></html>";
+    document.open();
+    document.write(html);
+    document.close();
+  } catch(e) {}
+})();
+</script>
+<!--/pg-access-gate-->
+</body>
+</html>
